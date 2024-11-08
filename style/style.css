@@ -1,0 +1,151 @@
+/* typography style start*/
+h1{
+    font-size:37px ;
+    line-height: 47px;
+    font-weight: 800;
+}
+h2{
+    font-size:29px ;
+    line-height: 39px;
+    font-weight: 700;
+}
+h3{
+    font-size:19px ;
+    line-height: 23px;
+    font-weight: 700;
+}
+h4{
+    font-size:15px ;
+    line-height: 20px;
+    font-weight: 200;
+    color: #5486C5;
+}
+p{
+    font-size:12px ;
+    line-height: 24px;
+    font-weight: 400;
+}
+/* typography style end*/
+
+/* global style start*/
+
+body{
+    font-family: "montserret" , sans-serif;
+}
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/* global style end*/
+
+/* navbar style start*/
+.navbar{
+    background-color: #DDF2FD !important;
+}
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 700;
+}
+.nav-link{
+    font-size: 15px;
+    font-weight: 400;
+}
+/* navbar style end*/
+
+/* header banner  start*/
+.body-banner{
+    background-color: #DDF2FD;
+}
+.body-banner .row{
+    align-items: center;
+}
+.header-banner{
+    background-color: #DDF2FD;
+}
+.header-banner .row{
+    align-items: center;
+}
+.center-block{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* header banner  end*/
+
+@media (max-width: 991px){
+    .row{
+        margin: 0 auto;
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+ .header-banner .row{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    
+}
+/* card body start*/
+.card{
+    width: 19rem;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 20px; 
+}
+  .card-banner .card i{
+    color: #5486C5;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .mid-banner{
+    margin: auto;
+  }
+  .mid-banner .card #left{
+    color: #5486C5;
+    font-size: 42px;
+    text-align:left;
+    margin-left: 20px;
+  }
+  .mid-banner .card #stars{
+    color:#f5a52a;
+    font-size: 15px ;
+    text-align:center;
+  }
+  .mid-banner .card img{
+    height: 90px;
+    width: 80px;
+    margin-top: 40px;
+  }
+  .mid-banner .card p{
+    margin-top: 20px;
+    margin-left: 30px;
+
+  }
+  .mid-banner .card #right{
+    color: #5486C5;
+    font-size: 42px;
+    text-align:left;
+    margin-left: 230px;
+  }
+/* card body end*/
+
+/* footer style start*/
+footer{
+    background-color:#2C343F;
+    color: white;
+}
+
+/* footer style end*/
