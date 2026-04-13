@@ -1,51 +1,53 @@
-/* typography style start*/
-h1{
-    font-size:37px ;
+/* typography style start */
+h1 {
+    font-size: 37px;
     line-height: 47px;
     font-weight: 800;
 }
-h2{
-    font-size:29px ;
+
+h2 {
+    font-size: 29px;
     line-height: 39px;
     font-weight: 700;
 }
-h3{
-    font-size:19px ;
+
+h3 {
+    font-size: 19px;
     line-height: 23px;
     font-weight: 700;
 }
-h4{
-    font-size:15px ;
+
+h4 {
+    font-size: 15px;
     line-height: 20px;
     font-weight: 200;
     color: #5486C5;
 }
-p{
-    font-size:12px ;
+
+p {
+    font-size: 12px;
     line-height: 24px;
     font-weight: 400;
 }
-/* typography style end*/
 
-/* global style start*/
-
-body{
-    font-family: "montserret" , sans-serif;
+/* global style start */
+body {
+    font-family: "Montserrat", sans-serif;
 }
-section{
+
+section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-/* global style end*/
 
-/* navbar style start*/
-.navbar{
+/* navbar style start */
+.navbar {
     background-color: #DDF2FD !important;
     transition: all 0.4s ease;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 35px;
     font-weight: 700;
     transition: all 0.3s ease;
@@ -54,10 +56,10 @@ section{
 
 .navbar-brand:hover {
     transform: scale(1.05);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-link{
+.nav-link {
     font-size: 15px;
     font-weight: 400;
     position: relative;
@@ -67,29 +69,21 @@ section{
     margin: 0 5px;
 }
 
-/* Enhanced Navbar Button Hover Effect */
 .nav-link:hover {
-    background: linear-gradient(135deg, rgba(84,134,197,0.1), rgba(84,134,197,0.05));
+    background: linear-gradient(135deg, rgba(84, 134, 197, 0.1), rgba(84, 134, 197, 0.05));
     transform: translateY(-2px);
     color: #5486C5 !important;
 }
 
-/* Active Nav Link Style */
 .nav-link.active {
     background: linear-gradient(135deg, #5486C5, #3a6ea5);
     color: white !important;
-    box-shadow: 0 4px 15px rgba(84,134,197,0.3);
+    box-shadow: 0 4px 15px rgba(84, 134, 197, 0.3);
 }
 
 .nav-link.active:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(84,134,197,0.4);
-}
-
-/* Ripple Effect for Nav Links */
-.nav-link {
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(84, 134, 197, 0.4);
 }
 
 .nav-link::before {
@@ -100,7 +94,7 @@ section{
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(84,134,197,0.3);
+    background: rgba(84, 134, 197, 0.3);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
 }
@@ -110,84 +104,49 @@ section{
     height: 100px;
 }
 
-/* navbar style end*/
-
-/* header banner start*/
-.body-banner{
+/* header banner start */
+.body-banner {
     background-color: #DDF2FD;
 }
-.body-banner .row{
+
+.body-banner .row {
     align-items: center;
 }
-.header-banner{
+
+.header-banner {
     background-color: #DDF2FD;
 }
-.header-banner .row{
+
+.header-banner .row {
     align-items: center;
 }
-.center-block{
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
 
-/* header banner end*/
-
-@media (max-width: 991px){
-    .row{
-        margin: 0 auto;
-        width: auto;
-    }
-    h1{
-        text-align: center;
-    }
-    h2{
-        text-align: center;
-    }
-    h4{
-        text-align: center;
-    }
-    p{
-        text-align: center;
-    }
- .header-banner .row{
-        display: flex;
-        flex-direction:column-reverse;
-    }
-    
-    /* Mobile Nav Improvements */
-    .nav-link {
-        text-align: center;
-        margin: 5px 0;
-    }
-    
-    .nav-link:hover {
-        transform: translateX(10px);
-    }
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Enhanced Card Styles */
-.card{
+.card {
     width: 19rem;
     text-align: center;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     border: none;
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     position: relative;
 }
 
-/* Card Hover Effect */
 .card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 35px rgba(84,134,197,0.2);
+    box-shadow: 0 20px 35px rgba(84, 134, 197, 0.2);
 }
 
-/* Card Glow Effect on Hover */
 .card::before {
     content: '';
     position: absolute;
@@ -195,7 +154,7 @@ margin-right: auto;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(84,134,197,0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(84, 134, 197, 0.1), transparent);
     transition: left 0.6s;
     pointer-events: none;
 }
@@ -204,8 +163,7 @@ margin-right: auto;
     left: 100%;
 }
 
-/* Card Icon Animation */
-.card-banner .card i{
+.card-banner .card i {
     color: #5486C5;
     font-size: 42px;
     text-align: center;
@@ -219,7 +177,6 @@ margin-right: auto;
     color: #3a6ea5;
 }
 
-/* Card Title Animation */
 .card-title {
     transition: all 0.3s ease;
 }
@@ -229,7 +186,6 @@ margin-right: auto;
     color: #5486C5;
 }
 
-/* Card Link Enhancement */
 .card a {
     display: inline-block;
     text-decoration: none;
@@ -256,17 +212,16 @@ margin-right: auto;
     transform: translateX(5px);
 }
 
-/* Card Body Enhancement */
 .card-body {
     transition: all 0.3s ease;
 }
 
 .card:hover .card-body {
-    background: linear-gradient(to bottom, transparent, rgba(84,134,197,0.02));
+    background: linear-gradient(to bottom, transparent, rgba(84, 134, 197, 0.02));
 }
 
 /* mid-banner card styles */
-.mid-banner{
+.mid-banner {
     margin: auto;
 }
 
@@ -276,13 +231,13 @@ margin-right: auto;
 
 .mid-banner .card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(84,134,197,0.25);
+    box-shadow: 0 20px 40px rgba(84, 134, 197, 0.25);
 }
 
-.mid-banner .card #left{
+.mid-banner .card #left {
     color: #5486C5;
     font-size: 42px;
-    text-align:left;
+    text-align: left;
     margin-left: 20px;
     transition: all 0.3s ease;
 }
@@ -291,10 +246,10 @@ margin-right: auto;
     transform: translateX(-5px) scale(1.1);
 }
 
-.mid-banner .card #stars{
-    color:#f5a52a;
-    font-size: 15px ;
-    text-align:center;
+.mid-banner .card #stars {
+    color: #f5a52a;
+    font-size: 15px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
@@ -307,7 +262,7 @@ margin-right: auto;
     50% { transform: scale(1.2); }
 }
 
-.mid-banner .card img{
+.mid-banner .card img {
     height: 90px;
     width: 80px;
     margin-top: 40px;
@@ -317,10 +272,10 @@ margin-right: auto;
 
 .mid-banner .card:hover img {
     transform: rotate(360deg) scale(1.1);
-    box-shadow: 0 5px 15px rgba(84,134,197,0.3);
+    box-shadow: 0 5px 15px rgba(84, 134, 197, 0.3);
 }
 
-.mid-banner .card p{
+.mid-banner .card p {
     margin-top: 20px;
     margin-left: 30px;
     transition: all 0.3s ease;
@@ -330,11 +285,11 @@ margin-right: auto;
     transform: translateX(5px);
 }
 
-.mid-banner .card #right{
+.mid-banner .card #right {
     color: #5486C5;
     font-size: 42px;
-    text-align:left;
-    margin-left: 230px;
+    text-align: right;
+    margin-right: 20px;
     transition: all 0.3s ease;
 }
 
@@ -342,7 +297,65 @@ margin-right: auto;
     transform: translateX(5px) scale(1.1);
 }
 
-/* Additional Animations for Cards */
+/* Testimonial Section Fix */
+.testimonial-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card-item {
+    width: 100%;
+    min-width: 280px;
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card-item .row {
+    width: 100%;
+    margin: 0;
+}
+
+.testimonial-content {
+    padding: 0 15px;
+}
+
+/* Social Icons */
+.social-icons i {
+    font-size: 28px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #5486C5;
+}
+
+.social-icons i:hover {
+    transform: translateY(-3px);
+    color: #3a6ea5;
+}
+
+/* Button Styles */
+.btn-primary-custom {
+    background: linear-gradient(135deg, #5486C5, #3a6ea5);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(84, 134, 197, 0.4);
+    color: white;
+}
+
+/* Animations */
 @keyframes cardFadeIn {
     from {
         opacity: 0;
@@ -362,11 +375,6 @@ margin-right: auto;
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.3s; }
 
-/* Pulse Animation for Icons on Load */
-.card-banner .card i {
-    animation: iconPulse 0.8s ease;
-}
-
 @keyframes iconPulse {
     0% {
         transform: scale(0);
@@ -381,15 +389,16 @@ margin-right: auto;
     }
 }
 
-/* card body end*/
+.card-banner .card i {
+    animation: iconPulse 0.8s ease;
+}
 
-/* footer style start*/
-footer{
-    background-color:#2C343F;
+/* footer style start */
+footer {
+    background-color: #2C343F;
     color: white;
 }
 
-/* Enhanced Footer Links */
 footer ul li {
     transition: all 0.3s ease;
     cursor: pointer;
@@ -409,58 +418,10 @@ footer img:hover {
     transform: scale(1.1) rotate(5deg);
 }
 
-/* footer style end*/
-
-/* Smooth Scroll Behavior */
 html {
     scroll-behavior: smooth;
 }
 
-/* Additional Hover Effects for Buttons */
-#button, .btn-primary-custom, button[type="submit"] {
-    transition: all 0.3s ease !important;
-    position: relative;
-    overflow: hidden;
-}
-
-#button:hover, .btn-primary-custom:hover, button[type="submit"]:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 5px 15px rgba(84,134,197,0.3);
-}
-
-/* Ripple Effect for Buttons */
-#button, .btn-primary-custom, button[type="submit"] {
-    position: relative;
-    overflow: hidden;
-}
-
-#button:active::after, .btn-primary-custom:active::after, button[type="submit"]:active::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.5);
-    transform: translate(-50%, -50%);
-    animation: ripple 0.6s ease-out;
-}
-
-@keyframes ripple {
-    0% {
-        width: 0;
-        height: 0;
-        opacity: 0.5;
-    }
-    100% {
-        width: 100px;
-        height: 100px;
-        opacity: 0;
-    }
-}
-
-/* Loading Animation for Cards */
 .card {
     position: relative;
 }
@@ -478,4 +439,502 @@ html {
 
 .card:hover::after {
     width: 100%;
+}
+
+/* ============================================ */
+/* ENHANCED MEDIA QUERIES FOR TABLET & MOBILE */
+/* ============================================ */
+
+/* Tablet Landscape (1024px - 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    h2 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+    .card {
+        width: 17rem;
+    }
+    
+    .testimonial-row {
+        gap: 15px;
+    }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .navbar-brand {
+        font-size: 28px;
+    }
+    
+    .nav-link {
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    .header-banner .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+    
+    .card-banner .row > div {
+        margin-bottom: 20px;
+    }
+    
+    .body-banner .row {
+        flex-direction: column;
+    }
+    
+    .body-banner img {
+        margin-bottom: 30px;
+        max-width: 80%;
+    }
+    
+    .testimonial-row {
+        gap: 20px;
+    }
+    
+    .testimonial-card-item {
+        min-width: auto;
+    }
+    
+    .mid-banner .card p {
+        text-align: center;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    
+    .mid-banner .card #right {
+        margin-right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .mid-banner .card #left {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .mid-banner .card img {
+        margin: 20px auto 0;
+        display: block;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer .row > div {
+        margin-bottom: 30px;
+    }
+    
+    .social-icons {
+        text-align: center;
+    }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 13px;
+        text-align: center;
+        line-height: 22px;
+    }
+    
+    .navbar-brand {
+        font-size: 24px;
+    }
+    
+    .navbar-toggler {
+        padding: 8px 12px;
+    }
+    
+    .nav-link {
+        text-align: center;
+        padding: 10px !important;
+        margin: 3px 0;
+    }
+    
+    .header-banner .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .header-banner img {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 15px auto;
+    }
+    
+    .card-banner .card i {
+        font-size: 36px;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 12px;
+    }
+    
+    .body-banner .row {
+        flex-direction: column;
+    }
+    
+    .body-banner img {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    .btn-primary-custom {
+        padding: 10px 25px;
+        font-size: 14px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .testimonial-card-item {
+        min-width: auto;
+    }
+    
+    .mid-banner .card #left,
+    .mid-banner .card #right {
+        font-size: 32px;
+    }
+    
+    .mid-banner .card img {
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    
+    .mid-banner .card p {
+        font-size: 12px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    
+    .mid-banner .card #right {
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .mid-banner .card #left {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer h1, footer h5 {
+        font-size: 18px;
+    }
+    
+    footer ul li {
+        font-size: 13px;
+    }
+    
+    .social-icons i {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+}
+
+/* Mobile Portrait (320px - 575px) */
+@media (max-width: 575px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+    }
+    
+    h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 11px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+    
+    .navbar-toggler {
+        padding: 6px 10px;
+    }
+    
+    .navbar-toggler-icon {
+        font-size: 14px;
+    }
+    
+    .nav-link {
+        text-align: center;
+        padding: 8px !important;
+        font-size: 13px;
+    }
+    
+    .header-banner .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .header-banner img {
+        max-width: 80%;
+        margin-bottom: 15px;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 260px;
+        margin: 15px auto;
+    }
+    
+    .card-banner .card i {
+        font-size: 32px;
+        margin-top: 15px;
+    }
+    
+    .card-title {
+        font-size: 18px;
+    }
+    
+    .card-text {
+        font-size: 11px;
+    }
+    
+    .card a {
+        font-size: 12px;
+    }
+    
+    .body-banner .row {
+        flex-direction: column;
+    }
+    
+    .body-banner img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .btn-primary-custom {
+        padding: 8px 20px;
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+    .testimonial-card-item {
+        min-width: auto;
+        padding: 15px;
+    }
+    
+    .mid-banner .card #left,
+    .mid-banner .card #right {
+        font-size: 28px;
+    }
+    
+    .mid-banner .card img {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    
+    .mid-banner .card p {
+        font-size: 11px;
+        margin-left: 0;
+        padding: 0 8px;
+    }
+    
+    .mid-banner .card #stars {
+        font-size: 12px;
+    }
+    
+    .mid-banner .card #right {
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .mid-banner .card #left {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .testimonial-content .col-3,
+    .testimonial-content .col-9 {
+        text-align: center;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer h1, footer h5 {
+        font-size: 16px;
+    }
+    
+    footer ul li {
+        font-size: 11px;
+    }
+    
+    footer .container {
+        padding: 20px 15px;
+    }
+    
+    .social-icons i {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+    
+    hr {
+        margin: 15px 0;
+    }
+}
+
+/* Small Mobile (under 360px) */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .card {
+        max-width: 240px;
+    }
+    
+    .card-banner .card i {
+        font-size: 28px;
+    }
+    
+    .mid-banner .card #left,
+    .mid-banner .card #right {
+        font-size: 24px;
+    }
+    
+    .mid-banner .card img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .card:hover {
+        transform: none;
+    }
+    
+    .nav-link:hover {
+        transform: none;
+    }
+    
+    .btn-primary-custom:hover {
+        transform: none;
+    }
+    
+    .card a:hover {
+        transform: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar, footer, .btn-primary-custom {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
 }
