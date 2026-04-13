@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Bugs Bunny</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -22,26 +22,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonial</a>
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="header-banner container-fluid">
+    <!-- Home Section -->
+    <div class="header-banner container-fluid" id="home">
         <section class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -56,7 +57,8 @@
         </section>
     </div>
 
-    <div class="card-banner container-fluid">
+    <!-- Features Section -->
+    <div class="card-banner container-fluid" id="features">
         <section class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
@@ -99,7 +101,8 @@
         </section>
     </div>
 
-    <div class="body-banner container-fluid">
+    <!-- About Section -->
+    <div class="body-banner container-fluid" id="about">
         <section class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -114,7 +117,8 @@
         </section>
     </div>
 
-    <div class="mid-banner container-fluid">
+    <!-- Testimonials Section -->
+    <div class="mid-banner container-fluid" id="testimonials">
         <section class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -211,7 +215,8 @@
         </section>
     </div>
 
-    <footer class="bd-footer py-4 py-md-5 mt-5 container-fluid">
+    <!-- Contact Section -->
+    <footer class="bd-footer py-4 py-md-5 mt-5 container-fluid" id="contact">
         <div class="container py-4 py-md-5 px-4 px-md-3">
             <div class="row">
                 <div class="col-lg-3 col-md-12 mb-3">
@@ -254,5 +259,47 @@
     </footer>
 
     <script src="javascript/bootstrap.bundle.js"></script>
+    
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Active link highlighting on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('.container-fluid');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
